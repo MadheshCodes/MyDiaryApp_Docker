@@ -1,0 +1,501 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<!-- ----Start Dash Content---- -->
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="row">
+            <div class="col-lg-8 mb-4 order-0">
+                <div class="card_whole">
+                    <div class="d-flex align-items-end row">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title dash_whole_report">Congratulations Madhesh! 🎉</h5>
+                                <p class="mb-4 whole_rpt_para">You have done <span class="fw-bold">72%</span> completed your diary today. Check your today diary in your profile.</p>
+
+                                <a href="javascript:;" class="btn btn-sm btn-outline-primary">View My Diary</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 text-center text-sm-left">
+                            <div class="card-body pb-0 px-0 px-md-4">
+                                <img src="~/img/Dashboard/man-with-laptop-light.png" height="140" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 order-1">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card_whole">
+                            <div class="card-body">
+                                <div class="analysis_rpt_card d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">Today Task</span>
+                                <h3 class="card-title mb-2 count_action">{ 20 }</h3>
+                                <small class="text-success-analysis fw-semibold "><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-4">
+                        <div class="card_whole">
+                            <div class="card-body error_size_body">
+                                <div class="analysis_rpt_card d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/assets/img/icons/unicons/wallet-info.png" alt="Credit Card" class="rounded">
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">Feelings</span>
+                                <h3 class="card-title text-nowrap mb-1 count_action">{ 08 }</h3>
+                                <small class="text-success-analysis fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----Total Revenue----- -->
+
+            <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                <div class="card_whole">
+                    <div class="row row-bordered g-0">
+                        <div class="col-md-8">
+                            <h5 class="card-header m-0 me-2 pb-3">August Revenue</h5>
+                            <div class="nav-align-top mb-4">
+                                <div class="tab-content scrollbar" id="style-4">
+                                    <div class="tab-pane fade active show" id="navs-justified-home" role="tabpanel">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Asset Expenses</h6>
+                                                        <small class="text-muted">Mic, Paid, Etc</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">6,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-success"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Liability Expenses</h6>
+                                                        <small class="text-muted">Travel, Tea, Etc</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">1,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-info"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Needed Expenses</h6>
+                                                        <small class="text-muted">Room Rent, Etc</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">849</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr class="revenue_hr">
+                                            <li class="d-flex mb-4">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-calculator"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Total Budget</h6>
+                                                        <small class="text-muted">All Expenses Noted</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">10,800</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-briefcase-alt"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Total Revenue</h6>
+                                                        <small class="text-muted">Mbw, Other, Etc</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">12,800</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr class="revenue_hr">
+                                            <li class="d-flex">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-info"><i class="bx bx-coin"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Available Balance</h6>
+                                                        <small class="text-muted">Save the Money</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">1,800</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="navs-justified-profile" role="tabpanel">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Room Rent</h6>
+                                                        <small class="text-muted">Mobile, Earbuds, TV</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">6,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-success"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Travel Expense</h6>
+                                                        <small class="text-muted">T-shirt, Jeans, Shoes</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">1,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-info"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Other Expense</h6>
+                                                        <small class="text-muted">Fine Art, Dining</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">849</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr class="revenue_hr">
+                                            <li class="d-flex">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Total Budget</h6>
+                                                        <small class="text-muted">Football, Cricket Kit</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">10,800</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="navs-justified-messages" role="tabpanel">
+                                        <ul class="p-0 m-0">
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-primary"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Room Rent</h6>
+                                                        <small class="text-muted">Mobile, Earbuds, TV</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">6,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-success"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Travel Expense</h6>
+                                                        <small class="text-muted">T-shirt, Jeans, Shoes</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">1,500</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="d-flex mb-4 pb-1">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-info"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Other Expense</h6>
+                                                        <small class="text-muted">Fine Art, Dining</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">849</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <hr class="revenue_hr">
+                                            <li class="d-flex">
+                                                <div class="avatar flex-shrink-0 me-3">
+                                                    <span class="avatar-initial rounded bg-label-secondary"><i class="bx bx-star"></i></span>
+                                                </div>
+                                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                                    <div class="me-2">
+                                                        <h6 class="mb-0">Total Budget</h6>
+                                                        <small class="text-muted">Football, Cricket Kit</small>
+                                                    </div>
+                                                    <div class="user-progress">
+                                                        <small class="fw-semibold">10,800</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs dash_nav_tabs nav-fill" role="tablist">
+                                    <li class="nav-item">
+                                        <button type="button" class="nav-link dash_nav_link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-justified-home" aria-controls="navs-justified-home" aria-selected="true">
+                                            <i class="tf-icons bx bx-home"></i> Total
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="nav-link dash_nav_link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-justified-profile" aria-controls="navs-justified-profile" aria-selected="false">
+                                            <i class="tf-icons bx bx-user"></i> Asset <span class="badge rounded-pill tab_dash_count badge-center h-px-20 w-px-20 bg-label-danger">3</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" class="nav-link dash_nav_link" role="tab" data-bs-toggle="tab" data-bs-target="#navs-justified-messages" aria-controls="navs-justified-messages" aria-selected="false">
+                                            <i class="tf-icons bx bx-message-square"></i> Liability <span class="badge rounded-pill tab_dash_count badge-center h-px-20 w-px-20 bg-label-danger">3</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4 chart_month">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="growthReportId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            August 2023
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="growthReportId">
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">July 2023</a>
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">June 2023</a>
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">May 2023</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="growthChart" style="min-height: 154.875px;display: flex;justify-content: center;">
+                                <div id="apexchartsmnydiwci" class="apexcharts-canvas apexchartsmnydiwci apexcharts-theme-light"
+                                     style="width: 265px; height: 154.875px;">
+                                    <svg id="SvgjsSvg2343" width="265" height="154.875"
+                                         xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         xmlns:svgjs="http://svgjs.dev" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)"
+                                         style="background: transparent;">
+                                        <g id="SvgjsG2345" class="apexcharts-inner apexcharts-graphical"
+                                           transform="translate(25.5, -25)">
+                                            <defs id="SvgjsDefs2344">
+                                                <clipPath id="gridRectMaskmnydiwci">
+                                                    <rect id="SvgjsRect2347" width="222" height="285" x="-3" y="-1" rx="0" ry="0" opacity="1" stroke-width="0"
+                                                          stroke="none" stroke-dasharray="0" fill="#fff"></rect>
+                                                </clipPath><clipPath id="forecastMaskmnydiwci">
+                                                </clipPath><clipPath id="nonForecastMaskmnydiwci"></clipPath><clipPath id="gridRectMarkerMaskmnydiwci">
+                                                    <rect id="SvgjsRect2348" width="220" height="287" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0"
+                                                          stroke="none" stroke-dasharray="0" fill="#fff"></rect>
+                                                </clipPath><linearGradient id="SvgjsLinearGradient2353" x1="1" y1="0" x2="0" y2="1">
+                                                    <stop id="SvgjsStop2354" stop-opacity="1"
+                                                          stop-color="rgba(105,108,255,1)" offset="0.3"></stop><stop id="SvgjsStop2355" stop-opacity="0.6"
+                                                                                                                     stop-color="rgba(255,255,255,0.6)" offset="0.7"></stop><stop id="SvgjsStop2356" stop-opacity="0.6"
+                                                                                                                                                                                  stop-color="rgba(255,255,255,0.6)" offset="1"></stop>
+                                                </linearGradient><linearGradient id="SvgjsLinearGradient2364" x1="1" y1="0" x2="0" y2="1">
+                                                    <stop id="SvgjsStop2365" stop-opacity="1"
+                                                          stop-color="rgba(105,108,255,1)" offset="0.3"></stop><stop id="SvgjsStop2366" stop-opacity="0.6"
+                                                                                                                     stop-color="rgba(105,108,255,0.6)" offset="0.7"></stop><stop id="SvgjsStop2367" stop-opacity="0.6"
+                                                                                                                                                                                  stop-color="rgba(105,108,255,0.6)" offset="1"></stop>
+                                                </linearGradient>
+                                            </defs><g id="SvgjsG2349"
+                                                      class="apexcharts-radialbar">
+                                                <g id="SvgjsG2350">
+                                                    <g id="SvgjsG2351" class="apexcharts-tracks">
+                                                        <g id="SvgjsG2352" class="apexcharts-radialbar-track apexcharts-track" rel="1">
+                                                            <path id="apexcharts-radialbarTrack-0" d="M 73.83506097560974 167.17541022773656 A 68.32987804878049 68.32987804878049 0 1 1 142.16493902439026 167.17541022773656"
+                                                                  fill="none" fill-opacity="1" stroke="rgba(255,255,255,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="17.357317073170734" stroke-dasharray="0"
+                                                                  class="apexcharts-radialbar-area" data:pathOrig="M 73.83506097560974 167.17541022773656 A 68.32987804878049 68.32987804878049 0 1 1 142.16493902439026 167.17541022773656">
+                                                            </path>
+                                                        </g>
+                                                    </g><g id="SvgjsG2358">
+                                                        <g id="SvgjsG2363" class="apexcharts-series apexcharts-radial-series" seriesName="Growth" rel="1"
+                                                           data:realIndex="0">
+                                                            <path id="SvgjsPath2368" d="M 73.83506097560974 167.17541022773656 A 68.32987804878049 68.32987804878049 0 1 1 175.95555982735613 100.85758285229481"
+                                                                  fill="none" fill-opacity="0.85" stroke="url(#SvgjsLinearGradient2364)" stroke-opacity="1" stroke-linecap="butt" stroke-width="17.357317073170734" stroke-dasharray="5"
+                                                                  class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="234" data:value="78" index="0" j="0" data:pathOrig="M 73.83506097560974 167.17541022773656 A 68.32987804878049 68.32987804878049 0 1 1 175.95555982735613 100.85758285229481">
+                                                            </path>
+                                                        </g><circle id="SvgjsCircle2359" r="54.65121951219512" cx="108" cy="108" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g id="SvgjsG2360" class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;">
+                                                            <text id="SvgjsText2361" font-family="Public Sans" x="108" y="123" text-anchor="middle" dominant-baseline="auto" font-size="15px" font-weight="500" fill="#566a7f" class="apexcharts-text apexcharts-datalabel-label" style="font-family: &quot;Public Sans&quot;;">
+                                                                Growth
+                                                            </text><text id="SvgjsText2362" font-family="Public Sans" x="108" y="99" text-anchor="middle" dominant-baseline="auto" font-size="22px" font-weight="500" fill="#566a7f" class="apexcharts-text apexcharts-datalabel-value" style="font-family: &quot;Public Sans&quot;;">
+                                                                78%
+                                                            </text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g><line id="SvgjsLine2369" x1="0" y1="0" x2="216" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine2370" x1="0" y1="0" x2="216" y2="0"
+                                                                                                                                                                                                                                stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line>
+                                        </g>
+                                        <g id="SvgjsG2346" class="apexcharts-annotations"></g>
+                                    </svg><div class="apexcharts-legend"></div>
+                                </div>
+                            </div>
+                            <div class="text-center fw-semibold pt-3 mb-2">62% Wealth Growth</div>
+                            <div class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <span class="badge bg-label-primary p-2"><i class="bx bx-dollar text-primary"></i></span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <small class="revenue_month">July</small>
+                                        <h6 class="mb-0">₹ 12.5K</h6>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="me-2">
+                                        <span class="badge bg-label-info p-2"><i class="bx bx-wallet text-info"></i></span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <small class="revenue_month">June</small>
+                                        <h6 class="mb-0">₹ 12.5K</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----Total Revenue----- -->
+
+            <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                <div class="row">
+                    <div class="col-6 mb-4">
+                        <div class="card_whole">
+                            <div class="card-body">
+                                <div class="analysis_rpt_card d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">Good</span>
+                                <h3 class="card-title mb-2 count_action">{ 13 }</h3>
+                                <small class="text-danger-analysis fw-semibold "><i class="bx bx-down-arrow-alt"></i> +72.80%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-4">
+                        <div class="card_whole">
+                            <div class="card-body">
+                                <div class="analysis_rpt_card d-flex align-items-start justify-content-between">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template-free/demo/assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
+                                    </div>
+                                    <div class="dropdown">
+                                        <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                                            <a class="dropdown-item-dashboard" href="javascript:void(0);">View More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="fw-semibold d-block mb-1">Mistake</span>
+                                <h3 class="card-title mb-2 count_action">{ 16 }</h3>
+                                <small class="text-success-analysis fw-semibold "><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <div class="card_whole">
+                            <div class="card-body">
+                                <div class="d-flex flex-sm-row flex-column gap-2" style="position: relative;">
+                                    <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                                        <div class="card-title">
+                                            <h5 class="text-nowrap mb-2">Diary Report</h5>
+                                            <span class="badge bg-label-warning rounded-pill">25/09/2023</span>
+                                        </div>
+                                        <div class="mt-sm-auto" style="text-align: center;">
+                                            <small class="text-success-analysis fw-semibold "><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                                            <h3 class="mb-0">84  <small class="event_text">Events</small>  <span class="event1_txt">Updated</span></h3>
+                                        </div>
+                                    </div>
+                                    <div class="align-items-star diary_bar_rpt">
+                                        <img src="~/img/Dashboard/diary.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- ----Start Dash Content---- -->

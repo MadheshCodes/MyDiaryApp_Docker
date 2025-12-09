@@ -1,0 +1,99 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<WebApplication1.Models.Diary>
+@{
+    ViewData["Title"] = "Dairy View";
+}
+
+
+<!-- ----Start Dash Content---- -->
+<div class="content-wrapper">
+    <div class="container-xxl flex-grow-1 container-p-y app_update_whole">
+        <div class="col app-Diary-update">
+            <a class="Diary_show_menu" onclick="openNav()">
+                <div class="Add_feelings_atag" style="display: flex;"><i class='bx bx-search-alt-2'></i></div>
+            </a>
+            <div id="mySidebar" class="sidebar Only_sidebar_diary">
+                <div>
+                    <div><h5 class="search_date">Search&nbsp;Date</h5></div>
+                    <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></div>
+                </div>
+                <div>
+                    <input type="text" class="form-login-control" placeholder="Ex: 12-05-2023">
+                </div>
+                <div class="all_show_date only_diary" id="feelings-scroll-style-1">
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                    <div class="date_show_search"><a class="date_show_A">12-02-2023</a></div>
+                </div>
+            </div>
+            <div class="app-Diary-body ps ps--active-y" id="diary_view_style">
+
+
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var entry in Model)
+                    {
+                        <div class="d-flex mb-1">
+                        <div class="chat-message-wrapper flex-grow-1 row">
+                            <div class="diary-message-text col-lg-12 col-sm-12">
+                                <div class="row">
+                                    <div class="count_sec col-lg-1 col-sm-2">
+                                        <div class="diary_count">
+                                            <h3>1</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-sm-9">
+                                            <p class="mb-0">@Html.Raw(Html.Encode(entry.Content).Replace("\n", "<br/>"))</p>
+                                    </div>
+                                    <div class="col-lg-1 col-sm-1 edit_section">
+                                        <a class="edit_diary" href="#"><i class='bx bx-edit'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_diary_show text-muted mt-1 col-lg-12 col-sm-12">
+                                <small>@entry.EntryDate.ToLocalTime().ToString("dd MMM yyyy HH:mm")</small>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-secondary">No diary entries yet.</div>
+                }
+
+            </div>
+
+            <div class="absol_input_sec">
+                <div class="shade_text-box">
+                    <div class="dialy_diary_textBox"></div>
+                </div>
+                <form asp-action="Diary" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="app-diary-input-sec">
+                        <input type="hidden" id="DiaryId" name="Id" value="0" />
+                        <textarea id="tex_area_box" name="Content" placeholder="Add Your Today Single Event"></textarea>
+                        <button type="submit" class="btn Add_btn_primary d-flex send-msg-btn">
+                            <i class="bx bx-paper-plane me-md-1 me-0"></i>
+                            <span class="align-middle d-md-inline-block d-none">Send</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

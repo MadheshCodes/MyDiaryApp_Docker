@@ -1,0 +1,285 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="icon" type="image/x-icon" href="~/img/logo/logo.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <title>Diary Of My Days | @ViewData["Title"]</title>
+</head>
+
+<body class="body_css">
+
+    <div class="layout-wrapper layout-content-navbar ">
+        <div class="layout-container">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+
+                <!-- ! Hide app brand if navbar-full -->
+                <div class="app-brand demo">
+                    <a href="dashboard.html" class="login_logo">
+                        <span class="app-brand-text demo text-body fw-bolder">
+                            <img style="width: 200px;" src="~/img/logo/Diary_Of_My_Days.png">
+                        </span>
+                    </a>
+                    <a onclick="Close_side_bar()" class="layout-menu-toggle menu-link text-large ms-autod-block mobile_nave_menu_show">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow scrollToShow" style="display: none;"></div>
+
+                <ul class="menu-inner py-1 ps ps--active-y scrollable-container" id="scroll-style-1">
+                    <li class="menu-item active">
+                        <a href="dashboard.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-bar-chart-alt"></i>
+                            <div>Overview</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="daily_diary.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-book-open"></i>
+                            <div>Daily Diary</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item side_show_header_item">
+                        <a href="#" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-calendar"></i>
+                            <div>25/09/2023</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item side_show_header_item">
+                        <a href="#" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-timer"></i>
+                            <div>23 Hrs 54 Mins</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Self_Analysis</span>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="feelings.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx bx-happy"></i>
+                            <div>My Feelings</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="gratitude.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-star"></i>
+                            <div>Gratitude</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="good_bad.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-file-find"></i>
+                            <div>Good & Bad</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="revenue_spend.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-wallet"></i>
+                            <div>Income & Spend</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Professional Analysis</span>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="upcoming_task.html"
+                           class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-task"></i>
+                            <div>Upcoming Task</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="my_goals.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cross"></i>
+                            <div>My Goals</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="affirmation.html" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-tv"></i>
+                            <div>Affirmation</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="corporate_task.html"
+                           class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-crown"></i>
+                            <div>Corporate Tasks</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+                        <span class="menu-header-text">Update</span>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="#" class="menu-link" target="_blank">
+                            <i class="menu-icon tf-icons bx bx-user-circle"></i>
+                            <div>My Profile</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="#"
+                           class="menu-link" target="_blank">
+                            <i class="menu-icon tf-icons bx bx-cog"></i>
+                            <div>Settings</div>
+                        </a>
+                    </li>
+                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+                        <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+                    </div>
+                    <div class="ps__rail-y" style="top: 0px; height: 294px; right: 4px;">
+                        <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 97px;"></div>
+                    </div>
+                </ul>
+
+            </aside>
+
+            <div class="layout-page" id="back_blur">
+                <!-- ----Start Navbar---- -->
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+
+                    <!--  Brand demo (display only for navbar-full and hide on below xl) -->
+
+
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <!-- ! Not required for layout-without-menu -->
+                        <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0  mobile_nave_menu_show ">
+                            <a class="nav-item nav-link px-0 me-xl-4 side_menu_tgl_btn" onclick="OpenSideBar()">
+                                <i class="bx bx-menu bx-sm"></i>
+                            </a>
+                        </div>
+                        <!-- Date -->
+                        <div class="navbar-nav align-items-center hide_mobile_show">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-calendar fs-4 lh-0" style="color: #7174ff;"></i>
+                                <div class="nav_date">24/09/2023</div>
+                            </div>
+                        </div>
+                        <!-- /Date -->
+                        <!-- time -->
+                        <div class="navbar-nav align-items-center hide_mobile_show" style="margin-left: 19px;">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-timer fs-4 lh-0" style="color: #7174ff;"></i>
+                                <div class="nav_date">23 Hrs 54 Mins</div>
+                            </div>
+                        </div>
+                        <!-- /time -->
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <li class="nav-item lh-1 me-3">
+                                <a class="Nofiy_btn" href="#">
+                                    <i class="bx bxs-bell fs-4 lh-0"></i>
+                                    <span class="icon-button__badge">2</span>
+                                </a>
+                            </li>
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" style="display: flex;" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="~/img/Dashboard/my_img.png" alt="" class="w-px-40 h-auto rounded-circle">
+                                    </div>
+                                    <div class="nav_date drop_main_name">Madhesh</div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end header_sub_drop">
+
+                                    <li>
+                                        <a class="dropdown-item-dashboard" href="javascript:void(0);">
+                                            <div class="d-flex">
+                                                <div class="drop_flex_shrink me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="/~/img/Dashboard/my_img.png" alt="" class="w-px-40 h-auto rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="span_drop d-block">Madhesh</span>
+                                                    <small class="login_drop_name">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item-dashboard" href="javascript:void(0);">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item-dashboard" href="javascript:void(0);">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item-dashboard" href="javascript:void(0);">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bxs-bell me-2"></i>
+                                                <span class="flex-grow-1 align-middle">Alert</span>
+                                                <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item-dashboard" href="index.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+
+
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <!-- ----End Navbar---- -->
+                <!-- ----Start Dash Content---- -->
+                @RenderBody()
+                <!-- ----Start Dash Content---- -->
+            </div>
+        </div>
+
+
+    </div>
+    <script src="~/js/dashboard.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+</html>
