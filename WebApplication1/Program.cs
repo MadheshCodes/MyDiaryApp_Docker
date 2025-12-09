@@ -17,10 +17,13 @@ if (!string.IsNullOrEmpty(databaseUrl))
     var pgUri = new Uri(databaseUrl);
     var userInfo = pgUri.UserInfo.Split(':');
 
+    int port = pgUri.Port;
+    if (port == -1) port = 5432; // default PostgreSQL port
+
     var npgsqlBuilder = new NpgsqlConnectionStringBuilder()
     {
         Host = pgUri.Host,
-        Port = pgUri.Port,
+        Port = port,
         Username = userInfo[0],
         Password = userInfo[1],
         Database = pgUri.AbsolutePath.TrimStart('/'),
